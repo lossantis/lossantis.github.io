@@ -3,77 +3,166 @@
     box-sizing: border-box;
 }
 
-#user-photo {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+body {
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    border-bottom: 3px solid #fff;
     width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+}
+
+#contact h3 {
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 6px;
+}
+
+.main {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+#user-photo {
+    padding: 0px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    /*margin-left: -20px;*/
+}
+
+#user-photo article {
+    display: none;
 }
 
 .rounded-img {
-    height: 190px;
-    margin-top: 35px;
+    margin: 0 auto;
+    display: block;
+    height: 180px;
     border: 2px solid #fff;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
 
-.main {
-    font-family: 'Montserrat', sans-serif;
+#name-role {
     display: flex;
-}
-
-h3 {
-    font-size: 1.3em;
-    padding-bottom: 14px;
-    border-bottom: 3px solid;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    margin-bottom: 0;
 }
 
 .left-panel {
-    padding: 0 0 0 20px;
     background-color: #333;
     color: #fff;
-    width: auto;
-}
-
-.left-panel h3 {
-    margin-top: 40px;
-    border-bottom-color: #fff;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
+    padding-left: 30px;
+    width: 400px;
+    height: 90%;
 }
 
 .left-panel a {
-    color: white;
+    color: #fff;
 }
 
-.left-panel article {
+.left-panel section article {
     display: flex;
-    margin-bottom: 30px
+    margin-bottom: 20px;
 }
 
-.left-panel article .fa {
-    font-size: 2.5em;
-    margin-right: 6px;
-    width: 52px;
+.left-panel section article:last-child {
+    margin-bottom: 0;
 }
 
-.left-panel article div {
+.left-panel .article-icon {
+    width: 60px;
+}
+
+.left-panel .article-icon .fa {
+    font-size: 3em;
+    margin-top: 8px;
+}
+
+.skills-panel {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    font-weight: bold;
+    width: auto;
+    padding: 0px;
 }
 
-.left-panel article div h4 {
-    font-size: 1.0em;
-    margin: 0px;
-    margin-bottom: 3px;
+.skills-left-painel {
+    margin-left: 8px;
+    width: 50%;
 }
 
-.left-panel article div p {
-    margin: 2px 0px 2px 0px;
-    ;
-    color: #ccc;
-    padding-right: 10px;
+.right-panel {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0;
 }
 
 .right-panel h1 {
@@ -85,19 +174,13 @@ h3 {
 
 .right-panel h2 {
     margin-top: 6px;
-    margin-bottom: 92px;
     font-size: 1.5em;
     letter-spacing: 0.3em;
     text-transform: uppercase;
 }
 
-.right-panel {
-    padding: 6px 20px 20px 20px;
-}
-
 .right-panel h3 {
     padding-top: 6px;
-    padding-right: 6px;
     padding-left: 0px;
     margin: 0px;
     margin-left: 10px;
@@ -109,26 +192,18 @@ h3 {
 }
 
 .right-panel h4 {
-    font-weight: bold;
     text-transform: uppercase;
     display: flex;
-    margin-bottom: 4px;
-    margin-left: 0px;
-    font-size: 1.1em;
 }
 
-.right-panel h4 div {
-    width: 225px;
+.right-panel p,
+.right-panel .about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.right-panel h5 {
-    font-size: 1em;
-    margin-left: 260px;
-    margin-top: 0px;
-}
-
-.right-panel p {
-    margin-left: 260px;
+.right-panel .about p {
+    margin-left: 4px;
 }
 
 .right-panel .title {
@@ -148,9 +223,28 @@ h3 {
     line-height: 46px;
 }
 
-.right-panel .mark-circle {
+.articles {
+    border-left: 3px solid #333;
+    margin-left: 20px;
+}
+
+.articles article {
+    display: flex;
+}
+
+.articles article .article-date {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 300px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.articles article .article-date .mark-circle {
+    display: block;
     margin-left: -8px;
-    margin-top: 4px;
+    margin-top: 10px;
     margin-right: 28px;
     border: 3px solid #333;
     border-radius: 50%;
@@ -159,29 +253,12 @@ h3 {
     background: white;
 }
 
-.right-panel .articles {
-    margin-left: 20px;
-    border-left: 3px solid #333;
+.articles article .article-date h4 {
+    padding-left: 10px;
 }
 
-.right-panel .about {
-    margin-left: 20px;
+.articles article .article-content {
+    margin-top: 10px;
 }
 
-.skills-panel {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0px;
-}
-
-.skills-left-painel {
-    width: 45%;
-    margin: 0px;
-    margin-right: 1%;
-}
-
-.skills-right-painel {
-    width: 45%;
-    margin: 0px;
-}
+.articles article .article-content h4 {}

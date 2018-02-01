@@ -1,27 +1,275 @@
+a:link,
+a:visited {
+    color: #551A8B;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+a:link:active,
+a:visited:active {
+    color: #0000EE;
+}
+
+body {
+    text-size-adjust: 200%;
+    -ms-text-size-adjust: 200%;
+    -moz-text-size-adjust: 200%;
+    -webkit-text-size-adjust: 200%;
+}
+
+h3 {
+    border-bottom: 3px solid #333;
+}
+
+#contact h3 {
+    margin-top: 30px;
+}
+
 .main {
     flex-direction: column;
 }
 
-#user-photo:after{
-    margin-bottom: 0px;
+.main div {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-photo {
+    height: 360px;
+}
+
+#name-role {
+    display: none;
+}
+
+.left-panel {
+    background-color: #fff;
+    color: #000;
+    padding-left: 2%;
+    width: 100%;
+}
+
+#user-photo article {
+    display: block;
+}
+
+/*old*/
+
+.left-panel section article {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-panel section article:last-child {
+    margin-bottom: 0;
+}
+
+.left-panel .article-icon {
+    width: 100px;
+}
+
+.left-panel .article-icon .fa {
+    font-size: 5em;
+    margin-top: 8px;
+}
+
+.skills-panel {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    width: auto;
+    padding: 0px;
+}
+
+.skills-left-painel {
+    margin-left: 8px;
+    width: 50%;
+}
+
+.right-panel {
+    margin: 0;
+}
+
+.right-panel .title .fa {
+    display: none;
+}
+
+right-panel #about p,
+.right-panel h5,
+.right-panel p {
+    text-indent: 0;
+    margin-left: 4px;
+}
+
+.articles article .article-date .mark-circle {
+    display: none;
+}
+
+.articles article .article-date {
+    display: none;
+}
+
+.articles {
+    border: none;
+    margin-left: 0px;
+}
+
+.articles article:first-child .article-date {
+    border: none;
+}
+
+.right-panel .article-content h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ddd;
+    width: 100%;
+}
+
+/*
+h1 {
     text-transform: uppercase;
     font-size: 4em;
     font-weight: bold;
-    display: block;
-    content: "Hugo Santos";
 }
 
-#contact:before{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+h2 {
     font-size: 1.5em;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    content: "Web Developer";
 }
 
-#name-role{
+h3 {
+    font-size: 1.5em;
+    border-bottom: 3px solid #333;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 6px;
+}
+
+.main {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-photo {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.rounded-img {
+    margin: 0 auto;
+    display: block;
+    height: 180px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#name-role {
     display: none;
 }
+
+.right-panel,
+.left-panel {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.left-panel section article {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-panel section article:last-child {
+    margin-bottom: 0;
+}
+
+.left-panel .article-icon {
+    width: 100px;
+}
+
+.left-panel .article-icon .fa {
+    font-size: 5em;
+    margin-top: 8px;
+}
+
+.skills-panel {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    width: auto;
+    padding: 0px;
+}
+
+.skills-left-painel {
+    margin-left: 8px;
+    width: 50%;
+}
+
+.right-panel {
+    margin: 0;
+}
+
+.right-panel .title .fa {
+    display: none;
+}
+
+.right-panel #about p,
+.right-panel h5,
+.right-panel p {
+    text-indent: 100px;
+}
+
+.right-panel .mark-circle {
+    display: none;
+}
+
+.right-panel .article-date {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 3px solid #ddd;
+}
+
+.articles article:first-child .article-date {
+    border: none;
+}
+
+.right-panel .article-content h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ddd;
+}
+*/
